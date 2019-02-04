@@ -2,3 +2,5 @@
 Get-WindowsCapability -Name RSAT* -Online | Add-WindowsCapability –Online
 #validate RSAT is installed 
 Get-WindowsCapability -Name RSAT* -Online
+#Script can Run
+Set-ExecutionPolicy Unrestricted
