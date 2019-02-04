@@ -1,0 +1,2 @@
+#instal RSAT on Win10 1908+
+Get-WindowsCapability -Name RSAT* -Online | Add-WindowsCapability –Online
