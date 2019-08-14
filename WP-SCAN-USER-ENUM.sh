@@ -1,0 +1,1 @@
+for i in {1..25}; do curl -s -L -i http://huggablehacker.com/?author=$i | grep -E -o "\" title=\"View all posts by [a-z0-9A-Z\-\.]*|Location:.*" | sed 's/\// /g' | cut -f 6 -d ' ' | grep -v "^$"; done
